@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-darkBlue: hsl(217, 28%, 15%);
+  --color-darkBlue1: hsl(218, 28%, 13%);
+  --color-darkBlue2: hsl(216, 53%, 9%);
+  --color-darkBlue3: hsl(219, 30%, 18%);
+  --color-accentCyan: hsl(176, 68%, 64%);
+  --color-accentBlue: hsl(198, 60%, 50%);
+  --color-lightRed: hsl(0, 100%, 63%);
+
+  --font-sans: "Raleway", sans-serif;
+  --font-opensans: "Open Sans", sans-serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  h1 {
+    @apply font-bold text-3xl leading-normal max-w-2xl md:text-5xl md:max-w-3xl mt-10;
+  }
+  h2 {
+    @apply font-bold text-2xl md:text-3xl mb-5;
+  }
+
+  h3 {
+    @apply font-bold text-xl mb-4 md:text-2xl;
+  }
+
+  h4 {
+    @apply font-bold text-xl md:text-4xl lg:max-w-sm;
+  }
+  h5 {
+    @apply text-sm font-semibold md:text-lg;
+  }
+
+  p {
+    @apply max-w-sm text-sm md:text-lg md:max-w-xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-accentCyan py-3 px-15 rounded-full text-xl cursor-pointer hover:opacity-70 hover:scale-95 active:scale-100 duration-200;
+  }
+  .section-container {
+    @apply container mx-auto px-6 mt-10 text-center;
+  }
+  .footer__link {
+    @apply text-xl capitalize hover:opacity-70 duration-200;
+  }
+}
