@@ -1,4 +1,4 @@
-# Frontend Mentor - Shortly page solution
+# Frontend Mentor - Fylo Website
 
 A Landin page for a fictional company called "Fylo".
 
@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: https://shortly-alpha.vercel.app
+- Live Site URL: https://fylo-alpha-liard.vercel.app
 
 ## My process
 
