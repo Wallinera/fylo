@@ -55,9 +55,16 @@ export default function App() {
 
 function Navigation({ darkMode, setDarkMode }) {
   function handleNavLink(e) {
-    window.scrollTo(e.target, {
-      behaviour: "smooth",
-    });
+    e.preventDefault();
+
+    const targetId = e.currentTarget.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
   }
 
   return (
